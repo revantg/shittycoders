@@ -14,7 +14,7 @@ int main()
                 cout<<num;
                 return(0);
             }
-            else
+            else    
                 pos = i;
         }
     }
@@ -25,3 +25,4 @@ int main()
         cout << num;
     }
 }
+

@@ -14,6 +14,6 @@ int main()
         cout<<"First";
     else if (odd % 2 == 1)
         cout<<"First";
-    else
+    else 
         cout<<"Second";
 }

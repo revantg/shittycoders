@@ -48,4 +48,4 @@ int main()
 	else
 		cout<<"no";
 
-}cf451
+}

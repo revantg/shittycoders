@@ -20,9 +20,11 @@ int main()
             for(int k = 0; k < q  and flag == 0; k++){
                 int t1 = qtime[k].first + i;
                 int t2 = qtime[k].second + i;
+                // if (t1 <= ptime[j].second and qtime[k].first + i >= ptime[j].first)
                 if ((t1 <= ptime[j].second and t2 >= ptime[j].first) or (t2 >=ptime[j].first and t2 <= ptime[j].second)){
                     count++;
                     flag = 1;
+                    // cout<<"Working for t "<<i<<" and 1 - "<<qtime[k].first<<" , 2 - "<<qtime[k].second<<endl;
                 }
             }
         }

@@ -2,12 +2,15 @@
 using namespace std;
 int main()
 {
-	int num, t; cin>>num>>t;
-	if (num == 1 and t == 10) cout<<"-1";
-	else
-	{
-		if (t==10) cout<<pow(10,(num-1));
-		else
-			cout<<pow(10,num-1);
-	}
+    int n, t; cin >> n >> t;
+    if (t == 10)
+    {
+        if (n == 1) return cout << -1, 0;
+        cout << 1;
+        for(int i = 0; i < n - 1; i++)
+            cout << 0;
+    }
+    else    
+        for (int i = 0; i < n; i++)
+            cout << t;
 }
